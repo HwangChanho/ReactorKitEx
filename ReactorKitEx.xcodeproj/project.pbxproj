@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1268F2E62940B1D700A4CD7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268F2E52940B1D700A4CD7D /* AppDelegate.swift */; };
 		1268F2E82940B1D700A4CD7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268F2E72940B1D700A4CD7D /* SceneDelegate.swift */; };
-		1268F2EA2940B1D700A4CD7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268F2E92940B1D700A4CD7D /* ViewController.swift */; };
 		1268F2ED2940B1D700A4CD7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1268F2EB2940B1D700A4CD7D /* Main.storyboard */; };
 		1268F2EF2940B1D800A4CD7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1268F2EE2940B1D800A4CD7D /* Assets.xcassets */; };
 		1268F2F22940B1D800A4CD7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1268F2F02940B1D800A4CD7D /* LaunchScreen.storyboard */; };
+		1268F2FB2940BE0200A4CD7D /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1268F2FA2940BE0200A4CD7D /* ReactorKit */; };
+		1268F2FE2940BE2000A4CD7D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1268F2FD2940BE2000A4CD7D /* RxCocoa */; };
+		1268F3002940BE3B00A4CD7D /* FruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268F2FF2940BE3B00A4CD7D /* FruitViewController.swift */; };
+		1268F3022940C04A00A4CD7D /* FruitReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268F3012940C04A00A4CD7D /* FruitReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1268F2E22940B1D700A4CD7D /* ReactorKitEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactorKitEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1268F2E52940B1D700A4CD7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1268F2E72940B1D700A4CD7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1268F2E92940B1D700A4CD7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1268F2EC2940B1D700A4CD7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1268F2EE2940B1D800A4CD7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1268F2F12940B1D800A4CD7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1268F2F32940B1D800A4CD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1268F2FF2940BE3B00A4CD7D /* FruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewController.swift; sourceTree = "<group>"; };
+		1268F3012940C04A00A4CD7D /* FruitReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1268F2FE2940BE2000A4CD7D /* RxCocoa in Frameworks */,
+				1268F2FB2940BE0200A4CD7D /* ReactorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +64,8 @@
 			children = (
 				1268F2E52940B1D700A4CD7D /* AppDelegate.swift */,
 				1268F2E72940B1D700A4CD7D /* SceneDelegate.swift */,
-				1268F2E92940B1D700A4CD7D /* ViewController.swift */,
+				1268F2FF2940BE3B00A4CD7D /* FruitViewController.swift */,
+				1268F3012940C04A00A4CD7D /* FruitReactor.swift */,
 				1268F2EB2940B1D700A4CD7D /* Main.storyboard */,
 				1268F2EE2940B1D800A4CD7D /* Assets.xcassets */,
 				1268F2F02940B1D800A4CD7D /* LaunchScreen.storyboard */,
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = ReactorKitEx;
+			packageProductDependencies = (
+				1268F2FA2940BE0200A4CD7D /* ReactorKit */,
+				1268F2FD2940BE2000A4CD7D /* RxCocoa */,
+			);
 			productName = ReactorKitEx;
 			productReference = 1268F2E22940B1D700A4CD7D /* ReactorKitEx.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 1268F2D92940B1D700A4CD7D;
+			packageReferences = (
+				1268F2F92940BE0200A4CD7D /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				1268F2FC2940BE2000A4CD7D /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 1268F2E32940B1D700A4CD7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1268F2EA2940B1D700A4CD7D /* ViewController.swift in Sources */,
+				1268F3002940BE3B00A4CD7D /* FruitViewController.swift in Sources */,
 				1268F2E62940B1D700A4CD7D /* AppDelegate.swift in Sources */,
 				1268F2E82940B1D700A4CD7D /* SceneDelegate.swift in Sources */,
+				1268F3022940C04A00A4CD7D /* FruitReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +308,8 @@
 				INFOPLIST_FILE = ReactorKitEx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +335,8 @@
 				INFOPLIST_FILE = ReactorKitEx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +372,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1268F2F92940BE0200A4CD7D /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		1268F2FC2940BE2000A4CD7D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1268F2FA2940BE0200A4CD7D /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1268F2F92940BE0200A4CD7D /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		1268F2FD2940BE2000A4CD7D /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1268F2FC2940BE2000A4CD7D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1268F2DA2940B1D700A4CD7D /* Project object */;
 }
